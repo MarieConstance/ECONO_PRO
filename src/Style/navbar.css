@@ -1,0 +1,106 @@
+:root {
+  --ma-couleur-principale: #124660;
+  --ma-couleur-bouton: #1b9476;
+  --mon--autre--couleur: #8bd59e;
+  --ma--couleur--text: #ffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Montserrat Alternates", sans-serif;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 90px;
+  transition: 0.1s;
+  background-color: var(--ma-couleur-principale);
+}
+.part {
+  display: flex;
+  gap: 50px;
+}
+.part {
+  color: var(--ma-couleur-principale);
+}
+.logo {
+  width: 8rem;
+  height: 5rem;
+}
+.logo img {
+  height: 100%;
+  width: 100%;
+}
+
+.navbar {
+  display: flex;
+  column-gap: 5rem;
+}
+
+.navbar li {
+  position: relative;
+}
+.navbar a {
+  font-size: 1rem;
+  font-weight: 500;
+  color: white;
+}
+
+.navbar a::after {
+  content: "";
+  width: 0;
+  height: 2px;
+  background-color: var(--ma-couleur-bouton);
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  transition: 0.4s all linear;
+}
+
+.navbar a:hover::after {
+  width: 100%;
+}
+.navbar .Acceuil-active::after {
+  width: 100%;
+}
+#menu-icon {
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 1000001;
+  display: none;
+}
+.btn {
+  padding: 0.7rem 1.4rem;
+  border: 2px solid var(--ma-couleur-bouton);
+  color: var(--ma-couleur-bouton);
+  font-weight: 400;
+  border-radius: 0.5rem;
+}
+.btn:hover {
+  background: var(--mon--autre--couleur);
+  border: 2px solid var(--ma--couleur--text);
+}
+.btn1 {
+  background: var(--mon--autre--couleur);
+  border: 2px solid var(--mon--autre--couleur);
+  color: var(--ma--couleur--text);
+  padding: 0.7rem 1.4rem;
+  font-weight: 400;
+  border-radius: 0.5rem;
+}
+.btn1:hover {
+  background: var(--ma-couleur-bouton);
+  border: 2px solid var(--ma--couleur--text);
+  color: var(--ma--couleur--text);
+}
