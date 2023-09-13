@@ -17,7 +17,7 @@ body {
   background-color: var(--ma-couleur-principale);
 }
 .cadrefontimage {
-  height: 90vh;
+  height: 85vh;
   background-image: url(../assets/accueil.jpg);
   background-position: center;
   background-size: cover;
@@ -27,14 +27,17 @@ body {
 }
 .divcentral {
   width: 45rem;
-  border: 4px solid var(--ma-couleur-bouton);
+  height: 25vh;
   align-items: center;
   text-align: center;
   position: absolute;
+  top: 18rem;
+  margin-left: 30%;
 }
 .divcentral h2 {
   font-size: 2.5rem;
   color: var(--ma--couleur--text);
+  margin-top: 1rem;
 }
 .divcentral h2 span {
   color: var(--mon--autre--couleur);
@@ -42,4 +45,137 @@ body {
 .divcentral h3 {
   font-size: 1.5rem;
   color: var(--ma--couleur--text);
+  margin-top: 2rem;
+}
+.divcentral:hover {
+  border: 4px solid var(--mon--autre--couleur);
+  transform: scale(1.1);
+}
+
+.button {
+  all: unset;
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 0.5em 1em;
+  border: var(--mon--autre--couleur) solid 0.15em;
+  border-radius: 0.5em;
+  color: var(--ma--couleur--text);
+  font-size: 1.2em;
+  font-weight: 600;
+  cursor: pointer;
+  overflow: hidden;
+  transition: border 300ms, color 300ms;
+  user-select: none;
+  margin-left: 54rem;
+  top: 36rem;
+}
+
+.button p {
+  z-index: 1;
+}
+
+.button:hover {
+  color: var(--ma--couleur--text);
+}
+
+.button:active {
+  border-color: teal;
+}
+
+.button::after,
+.button::before {
+  content: "";
+  position: absolute;
+  width: 9em;
+  aspect-ratio: 1;
+  background: mediumspringgreen;
+  opacity: 50%;
+  border-radius: 50%;
+  transition: transform 500ms, background 300ms;
+}
+
+.button::before {
+  left: 0;
+  transform: translateX(-8em);
+}
+
+.button::after {
+  right: 0;
+  transform: translateX(8em);
+}
+
+.button:hover:before {
+  transform: translateX(-1em);
+}
+
+.button:hover:after {
+  transform: translateX(1em);
+}
+
+.button:active:before,
+.button:active:after {
+  background: teal;
+}
+.cadreblanc {
+  width: 50%;
+  height: auto;
+  margin: auto;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  top: 43rem;
+  justify-content: space-around;
+}
+.cadreblanc1 {
+  background-color: var(--ma--couleur--text);
+  width: fit-content;
+  width: 18rem;
+  height: 16rem;
+  border-bottom: 15px solid var(--ma-couleur-bouton);
+  margin-top: 6rem;
+  border-radius: 15px;
+  box-shadow: var(--ma-couleur-bouton) 0px 50px 80px -20px,
+    var(--ma--couleur--text) 0px 30px 60px -30px,
+    var(--mon--autre--couleur) 0px -2px 6px 0px inset;
+}
+.cadreblanc1:hover,
+.divmilieu1:hover,
+.divmilieu2:hover {
+  transform: scale(1.1);
+  border-bottom: var(--mon--autre--couleur) 15px solid;
+}
+.divmilieu {
+  width: 18rem;
+  height: 40rem;
+  display: block;
+  flex-direction: row;
+}
+.divmilieu1 {
+  border-bottom: 15px solid var(--ma-couleur-bouton);
+  background-color: var(--ma--couleur--text);
+  width: 100%;
+  height: 16rem;
+  border-radius: 15px;
+  box-shadow: var(--ma-couleur-bouton) 0px 50px 80px -20px,
+    var(--ma--couleur--text) 0px 30px 60px -30px,
+    var(--mon--autre--couleur) 0px -2px 6px 0px inset;
+}
+.divmilieu2 {
+  border-bottom: 15px solid var(--ma-couleur-bouton);
+  background-color: var(--ma--couleur--text);
+  width: 100%;
+  height: 16rem;
+  margin-top: 4rem;
+  border-radius: 15px;
+  box-shadow: var(--ma-couleur-bouton) 0px 50px 80px -20px,
+    var(--ma--couleur--text) 0px 30px 60px -30px,
+    var(--mon--autre--couleur) 0px -2px 6px 0px inset;
+}
+.cadreblanc span {
+  color: var(--mon--autre--couleur);
+}
+.cadreblanc p {
+  text-align: center;
+  width: 90%;
 }
