@@ -1,6 +1,7 @@
 import React from "react";
 import "../Style/navbar.css";
 import logo from "../assets/MonLogo.png"
+import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
@@ -17,19 +18,19 @@ function Navbar() {
           </a>
         </li>
         <li>
-          <a href="#">A propos</a>
+          <a href="#monapropos">A propos</a>
         </li>
         <li>
-          <a href="#">Nos services</a>
+          <a href="#nosservice">Nos services</a>
         </li>
         <li>
-          <a href="#">Contacts</a>
+          <a href="#contact">Contacts</a>
         </li>
       </ul>
       <div className="part">
-        <a href="#" className="btn">
+        <Link to= "/Login" className="btn">
           Se connecter
-        </a>
+        </Link>
         <a href="#" className="btn1">
           S'inscrire
         </a>
