@@ -31,7 +31,7 @@ body {
   align-items: center;
   text-align: center;
   position: absolute;
-  top: 18rem;
+  top: 14rem;
   margin-left: 30%;
 }
 .divcentral h2 {
@@ -68,7 +68,7 @@ body {
   transition: border 300ms, color 300ms;
   user-select: none;
   margin-left: 54rem;
-  top: 36rem;
+  top: 32rem;
 }
 
 .button p {

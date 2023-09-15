@@ -26,6 +26,7 @@ header {
   padding: 8px 90px;
   transition: 0.1s;
   background-color: var(--ma-couleur-principale);
+  box-shadow: var(--mon--autre--couleur) 2px 2px 2px 2px;
 }
 .part {
   display: flex;
@@ -46,6 +47,7 @@ header {
 .navbar {
   display: flex;
   column-gap: 5rem;
+  font-size: (0.5rem +1.5vw);
 }
 
 .navbar li {
@@ -88,8 +90,8 @@ header {
   border-radius: 0.5rem;
 }
 .btn:hover {
-  background: var(--mon--autre--couleur);
-  border: 2px solid var(--ma--couleur--text);
+  border: 2px solid var(--mon--autre--couleur);
+  color: var(--mon--autre--couleur);
 }
 .btn1 {
   background: var(--mon--autre--couleur);
@@ -103,4 +105,45 @@ header {
   background: var(--ma-couleur-bouton);
   border: 2px solid var(--ma--couleur--text);
   color: var(--ma--couleur--text);
+}
+#burger {
+  display: none;
+  cursor: pointer;
+}
+#close {
+  display: none;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  #burger {
+    display: block;
+  }
+  .active #burger:before {
+    content: \2715;
+  }
+  .navbar {
+    position: fixed;
+    top: 6%;
+    left: -100%;
+    flex-direction: column;
+    background-color: var(--ma-couleur-principale);
+    width: 100%;
+    height: 50vh;
+    text-align: center;
+    transition: 0.25s;
+  }
+  .navbar li {
+    padding: 3px 0;
+    margin-top: 3rem;
+  }
+  .navbar li:hover {
+    background-color: #226384;
+  }
+  .active {
+    left: 0;
+  }
+  .navbar a {
+    font-size: 1.6rem;
+  }
 }

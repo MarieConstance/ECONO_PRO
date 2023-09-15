@@ -2,7 +2,10 @@ import React from "react";
 import "../Style/login.css"
 
 function Login(params) {
-    
+      
+
+
+
     return(
         <form className="form">
     <p className="title">Register </p>
