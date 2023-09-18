@@ -190,6 +190,8 @@ body {
   width: 90%;
   margin-top: 2rem;
 }
+
+/* -------apropos--------------*/
 .title-apropos {
   text-align: center;
   font-size: 2rem;
@@ -200,7 +202,7 @@ body {
 .monspan {
   color: var(--mon--autre--couleur);
 }
-/* -------apropos--------------*/
+
 .contenaire-apropos {
   display: flex;
   flex-wrap: wrap;
@@ -244,6 +246,7 @@ body {
   margin-left: -2rem;
   border-top-left-radius: 20px;
 }
+/*---------SERVICE--------------*/
 .title-service {
   text-align: center;
   font-size: 2rem;
@@ -277,6 +280,7 @@ body {
   font-size: 1.3rem;
   margin-top: 2rem;
 }
+/*------------CONTACT--------------------*/
 .contenair-contact {
   width: 80%;
   height: 35rem;
@@ -308,4 +312,262 @@ body {
 }
 .contenair-contact p {
   margin-left: 20px;
+}
+/*-----------------------------RESPOPNSIVITE------------------------------*/
+
+@media (max-width: 1440px) {
+  .cadreblanc {
+    width: 80%;
+    top: 43rem;
+  }
+  .title-apropos {
+    margin-top: 38rem;
+  }
+
+  .divcentral {
+    margin-left: 20%;
+  }
+  .button {
+    margin-left: 37rem;
+    top: 30rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .title-apropos {
+    margin-top: 38rem;
+  }
+
+  .divcentral {
+    margin-left: 16%;
+  }
+  .button {
+    margin-left: 25rem;
+    top: 30rem;
+  }
+  .cadreblanc {
+    width: 80%;
+    height: auto;
+    margin: auto;
+    top: 38rem;
+  }
+  .cadreblanc1 {
+    height: 12rem;
+    width: 15rem;
+    margin-top: 6rem;
+  }
+  .divmilieu {
+    width: 15rem;
+    height: auto;
+  }
+  .divmilieu1 {
+    width: 100%;
+    height: 12rem;
+  }
+  .divmilieu2 {
+    width: 100%;
+    height: 12rem;
+    margin-top: 4rem;
+  }
+  .cadreblanc span {
+    color: var(--mon--autre--couleur);
+    font-size: 1rem;
+  }
+  .cadreblanc .material-symbols-outlined {
+    font-size: 2.6rem;
+  }
+  .material-symbols-outlined {
+    font-size: 3rem;
+    color: var(--mon--autre--couleur);
+  }
+  .cadreblanc p {
+    margin-top: 1rem;
+  }
+  .title-apropos {
+    margin-top: 25rem;
+  }
+  .contenaire-apropos {
+    width: 100%;
+  }
+  .contenaire-apropos .enfnt1 {
+    width: 50%;
+    height: auto;
+    border: 2px solid var(--mon--autre--couleur);
+    padding: 20px 20px;
+    font-size: 1.2rem;
+  }
+  .contenaire-apropos .enfnt2 {
+    width: 15rem;
+    height: 15rem;
+  }
+  .contenair-service {
+    width: 90%;
+    height: auto;
+    margin: auto;
+    margin-top: 5rem;
+  }
+  .contenair-service div {
+    width: 33%;
+    padding: 20px 30px;
+  }
+  .contenair-service div h2 {
+    font-size: 1.2rem;
+  }
+  .contenair-service div p {
+    font-size: 1rem;
+  }
+  /*-------------CONTACT-------*/
+  .contenair-contact {
+    width: 100%;
+    height: auto;
+  }
+}
+/*-----------------------768PX--------------------*/
+@media (max-width: 768px) {
+  .cadrefontimage {
+    height: 70vh;
+    width: 48rem;
+  }
+  .divcentral {
+    margin-left: 8rem;
+    width: 30rem;
+    height: 20vh;
+  }
+  .button {
+    margin-left: 20rem;
+    top: 30rem;
+  }
+  .divcentral h2 {
+    font-size: 2rem;
+    margin-top: 1rem;
+  }
+  .divcentral h2 span {
+    font-size: 2rem;
+  }
+  .divcentral h3 {
+    font-size: 1.2rem;
+    margin-top: 2rem;
+  }
+  .cadreblanc {
+    width: 50%;
+    top: 35rem;
+  }
+  .cadreblanc1 {
+    height: 12rem;
+    width: 15rem;
+    margin-top: 1.2rem;
+  }
+  .divmilieu {
+    width: 15rem;
+    height: auto;
+    margin-top: 1.2rem;
+  }
+  .divmilieu1 {
+    width: 100%;
+    height: 12rem;
+  }
+  .divmilieu2 {
+    width: 100%;
+    height: 12rem;
+    margin-top: 1.2rem;
+  }
+  .title-apropos {
+    margin-top: 52rem;
+  }
+  .contenair-contact .enf1 {
+    width: 40%;
+    margin-left: 1rem;
+  }
+  .contenair-contact .enf1 div {
+    font-size: 1.2rem;
+  }
+  .contenair-contact .enf2 {
+    width: 55%;
+    height: auto;
+  }
+  .contenair-contact .enf2 form {
+    margin-left: 4rem;
+  }
+  .contenair-contact .material-symbols-outlined {
+    font-size: 2.5rem;
+  }
+  .contenair-contact p {
+    margin-left: 20px;
+  }
+}
+@media (max-width: 425px) {
+  .cadreblanc {
+    width: 60%;
+    top: 35rem;
+  }
+  .cadreblanc1 {
+    height: 12rem;
+    width: 25rem;
+  }
+  .divmilieu {
+    width: 25rem;
+    height: auto;
+    margin-top: 1.2rem;
+  }
+  .title-apropos {
+    margin-top: 52rem;
+    margin-left: 5rem;
+    width: 38rem;
+  }
+  .contenaire-apropos {
+    width: 35rem;
+    margin-left: 7rem;
+  }
+  .contenaire-apropos .enfnt1 {
+    width: 35rem;
+    height: auto;
+    font-size: 1.5rem;
+    margin-bottom: 5rem;
+  }
+  .contenaire-apropos .enfnt2 {
+    width: 30rem;
+    height: 20rem;
+  }
+  .contenair-service {
+    width: 40rem;
+    margin-left: 4rem;
+  }
+  .contenair-service div {
+    width: 50%;
+    padding: 20px 30px;
+  }
+  .contenair-service div h2 {
+    font-size: 1.2rem;
+  }
+  .contenair-service div p {
+    font-size: 1rem;
+  }
+  #nosservice {
+    margin-left: 14rem;
+    width: 20rem;
+  }
+  .contenair-contact .enf1 div {
+    font-size: 1.2rem;
+  }
+  .contenair-contact .enf2 {
+    width: 55%;
+    height: auto;
+  }
+  .contenair-contact .enf2 form {
+    margin-left: 4rem;
+  }
+  .contenair-contact .material-symbols-outlined {
+    font-size: 2.5rem;
+  }
+  .contenair-contact p {
+    margin-left: 20px;
+  }
+  .contenair-contact {
+    width: 45rem;
+    margin-left: 2rem;
+  }
+  #contact {
+    margin-left: 13rem;
+    width: 20rem;
+  }
 }

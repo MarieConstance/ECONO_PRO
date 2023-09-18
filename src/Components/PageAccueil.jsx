@@ -6,13 +6,14 @@ import imag from "../assets/calcule1.jpg";
 import image from "../assets/epargnecochon.jpg";
 import img from "../assets/8749.jpg";
 import imge from "../assets/apropos3.jpg";
+import Aos from "aos";
 
 function PageAccueil() {
   return (
     <>
       <Navbar />
       <div className="cadrefontimage">
-        <div className="divcentral">
+        <div data-aos="fade-up-right" className="divcentral">
           <h2>
             Bienvenu à <span>ECONO_PRO</span>
           </h2>
@@ -26,7 +27,7 @@ function PageAccueil() {
           <p>Commencer</p>
         </button>
         <div className="cadreblanc">
-          <div className="cadreblanc1">
+          <div data-aos="fade-up-right" data-aos-duration="2000" className="cadreblanc1">
             <span class="material-symbols-outlined">payments</span>
             <p>
               Avec <span>ECONO_PRO</span> dépenser intelligemment votre argent
