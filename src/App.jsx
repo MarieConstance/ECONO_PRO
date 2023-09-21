@@ -3,7 +3,7 @@ import Navbar from './Components/Navbar';
 import Login from './Components/login';
 import PageAccueil from './Components/PageAccueil';
 import Register from './Components/register';
-import Tableaubord from './Components/Dashbord/Tableaubord'
+import Dashbord from './Components/Dashbord/tableaubord';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 
@@ -16,7 +16,7 @@ function App() {
           <Route path='/' element = {<PageAccueil/>}/>
           <Route path='/Login' element = {<Login/>}/>
           <Route path='/Register' element = {<Register/>}/>
-          <Route path='/Tableaubord' element = {<Tableaubord/>}/>
+          <Route path='/Tableaubord' element = {<Dashbord/>}/>
         </Routes>
       </Suspense>
     </Router>

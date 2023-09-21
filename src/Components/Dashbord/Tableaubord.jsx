@@ -1,11 +1,14 @@
 import React from "react";
-import "../Components/Style/Dashbord.css"
+import "../../Style/Dashboard.css"
 
 function Dashbord() {
    return(
-    <div>
+    <div className="espace-dashboard">
       <div className="menu"></div>
-      <div className="corpsdashbord"></div>
+      <div className="corpsdashbord">
+        <div className="div-header"></div>
+        <div className="div-second"></div>
+      </div>
     </div>
    )
 }
