@@ -4,6 +4,7 @@ import Login from './Components/login';
 import PageAccueil from './Components/PageAccueil';
 import Register from './Components/register';
 import Dashbord from './Components/Dashbord/tableaubord';
+import SaisirDepense from './Components/Dashbord/SaisirDepense';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 
@@ -17,6 +18,7 @@ function App() {
           <Route path='/Login' element = {<Login/>}/>
           <Route path='/Register' element = {<Register/>}/>
           <Route path='/Tableaubord' element = {<Dashbord/>}/>
+          <Route path='/SaisirDepense' element = {<SaisirDepense/>}/>
         </Routes>
       </Suspense>
     </Router>

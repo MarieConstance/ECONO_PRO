@@ -1,58 +1,120 @@
 :root {
-    --ma-couleur-principale: #124660;
-    --ma-couleur-bouton: #1b9476;
-    --mon--autre--couleur: #8bd59e;
-    --ma--couleur--text: #ffff;
-  }
-  
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    list-style: none;
-    font-family: "Montserrat Alternates", sans-serif;
-  }
+  --ma-couleur-principale: #124660;
+  --ma-couleur-bouton: #1b9476;
+  --mon--autre--couleur: #8bd59e;
+  --ma--couleur--text: #ffff;
+}
 
-.espace-dashboard{
-    display: flex;
-    width: 100%;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Montserrat Alternates", sans-serif;
 }
-.espace-dashboard .menu{
-    width :15%;
-    height: 100vh;
-    background-color: var(--ma-couleur-principale);
-    border-right: 1px solid black;
+
+.espace-dashboard {
+  display: flex;
+  width: 100%;
 }
-.espace-dashboard .corpsdashbord{
-    width: 85%;
-    height: 100vh;
-    background-color: var(--ma--couleur--text);
+.espace-dashboard .menu {
+  width: 13%;
+  height: 100vh;
+  background-color: var(--ma-couleur-principale);
+  border-right: 1px solid black;
 }
-.div-header{
-    height: 10%;
-    width: 100%;
-    background-color: var(--ma--couleur--text);
+.espace-dashboard .corpsdashbord {
+  width: 87%;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.901);
+  align-items: center;
+  text-align: center;
 }
-.div-second{
-    height: 30%;
-    width: 100%;
-    background-color: var(--mon--autre--couleur);
-    position: absolute;
+.div-header {
+  height: 7%;
+  width: 100%;
+  background-color: va rgba(255, 255, 255, 0.901);
 }
-.cadre-affichache{
-    height: auto ;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    position: relative;
-    top: 5rem;
+.div-second {
+  height: 20%;
+  width: 87%;
+  background-color: var(--mon--autre--couleur);
+  position: absolute;
 }
-.cadre-affichache .enfant1{
-    width: 15rem;
-    height: 10rem;
-    border: 1px solid green;
-    background-color: var(--ma--couleur--text);
-    border-radius: 10px;
+.cadre-affichache {
+  height: 10rem;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  position: relative;
+  top: 8rem;
+  margin: auto;
+}
+.cadre-affichache .enfant1 {
+  width: 23rem;
+  height: auto;
+  background-color: var(--ma--couleur--text);
+  border-radius: 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  text-align: center;
+}
+.monmenu {
+  margin-top: 7rem;
+  height: 60%;
+  line-height: 50px;
+  padding: 10px;
+  font-size: 1rem;
+  color: var(--ma--couleur--text);
+}
+.monmenu span {
+  font-size: 2.2rem;
+  margin-top: 15px;
+  color: var(--ma--couleur--text);
+}
+.monmenu .lien {
+  color: var(--ma--couleur--text);
+  text-decoration: none;
+}
+.monmenu #active{
+    color: var(--mon--autre--couleur);
+}
+.monmenu .lien:hover {
+    color: var(--mon--autre--couleur);
+  }
+.enfant1 .enfant1-affiche {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  margin-top: 1.2rem;
+}
+.enfant1-affiche h3 {
+  font-size: 1.3rem;
+}
+#icons {
+  font-size: 2.5rem;
+}
+.enfant1 h2 {
+  margin-top: 15px;
+  color: var(--ma-couleur-principale);
+}
+.title-table {
+  margin-top: 15rem;
+  color: var(--ma-couleur-principale);
+}
+.table {
+  margin-top: 2rem;
+  width: 80%;
+  margin-left: 10rem;
+  color: var(--ma-couleur-principale);
+}
+.table tbody tr {
+  height: 4rem;
+  background-color: var(--ma--couleur--text);
+}
+.table tbody tr:hover {
+  background-color: var(--mon--autre--couleur);
 }

@@ -1,0 +1,44 @@
+:root {
+  --ma-couleur-principale: #124660;
+  --ma-couleur-bouton: #1b9476;
+  --mon--autre--couleur: #8bd59e;
+  --ma--couleur--text: #ffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Montserrat Alternates", sans-serif;
+}
+
+.espace-dashboard {
+  display: flex;
+  width: 100%;
+}
+.espace-dashboard .menu {
+  width: 13%;
+  height: 100vh;
+  background-color: var(--ma-couleur-principale);
+  border-right: 1px solid black;
+}
+.espace-dashboard .corpsdashbord {
+  width: 87%;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.901);
+  align-items: center;
+  text-align: center;
+  display: flex;
+}
+.div-header {
+  height: 7%;
+  width: 100%;
+  background-color: va rgba(255, 255, 255, 0.901);
+}
+
+.row {
+  width: 70%;
+  margin: auto;
+}
