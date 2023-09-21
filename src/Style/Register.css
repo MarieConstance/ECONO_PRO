@@ -1,0 +1,139 @@
+:root {
+  --ma-couleur-principale: #124660;
+  --ma-couleur-bouton: #1b9476;
+  --mon--autre--couleur: #8bd59e;
+  --ma--couleur--text: #ffff;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 480px;
+  padding: 30px;
+  border-radius: 20px;
+  position: relative;
+  background-color: var(--ma-couleur-principale);
+  color: #fff;
+  border: 2px solid var(--mon--autre--couleur);
+}
+
+.title {
+  font-size: 28px;
+  font-weight: 600;
+  letter-spacing: -1px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+  color: var(--mon--autre--couleur);
+}
+
+.title::before,
+.title::after {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  left: 0px;
+  background-color: var(--mon--autre--couleur);
+}
+
+.message,
+.signin {
+  font-size: 14.5px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.signin {
+  text-align: center;
+}
+
+.signin a:hover {
+  text-decoration: underline var(--mon--autre--couleur);
+}
+
+.signin .lien {
+  color: var(--mon--autre--couleur);
+}
+
+.flex {
+  display: flex;
+  width: 100%;
+  gap: 6px;
+  margin-top: 2rem;
+}
+
+.form label {
+  position: relative;
+}
+
+.form label .input {
+  background-color: #09090952;
+  color: #fff;
+  width: 100%;
+  padding: 10px 05px 05px 10px;
+  outline: 0;
+  border: 1px var(--mon--autre--couleur);
+  border-radius: 10px;
+}
+
+.form label .input + span {
+  color: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  left: 10px;
+  top: 0px;
+  font-size: 0.9em;
+  cursor: text;
+  transition: 0.3s ease;
+}
+
+.form label .input:placeholder-shown + span {
+  top: 12.5px;
+  font-size: 0.9em;
+}
+
+.form label .input:focus + span,
+.form label .input:valid + span {
+  color: var(--mon--autre--couleur);
+  top: 0px;
+  font-size: 0.7em;
+  font-weight: 600;
+}
+
+.input {
+  font-size: medium;
+}
+
+.submit {
+  border: none;
+  outline: none;
+  padding: 10px;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 16px;
+  transform: 0.3s ease;
+  background-color: var(--mon--autre--couleur);
+  height: 3rem;
+}
+
+.submit:hover {
+  background-color: var(--ma-couleur-bouton);
+}
+
+@keyframes pulse {
+  from {
+    transform: scale(0.9);
+    opacity: 1;
+  }
+
+  to {
+    transform: scale(1.8);
+    opacity: 0;
+  }
+}

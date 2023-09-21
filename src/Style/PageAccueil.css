@@ -12,6 +12,7 @@
   text-decoration: none;
   list-style: none;
   font-family: "Montserrat Alternates", sans-serif;
+  scroll-behavior: smooth;
 }
 body {
   background-color: var(--ma-couleur-principale);
@@ -313,6 +314,7 @@ body {
 .contenair-contact p {
   margin-left: 20px;
 }
+
 /*-----------------------------RESPOPNSIVITE------------------------------*/
 
 @media (max-width: 1440px) {

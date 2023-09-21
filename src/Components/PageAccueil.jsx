@@ -13,7 +13,7 @@ function PageAccueil() {
     <>
       <Navbar />
       <div className="cadrefontimage">
-        <div data-aos="fade-up-right" className="divcentral">
+        <div className="divcentral">
           <h2>
             Bienvenu à <span>ECONO_PRO</span>
           </h2>
@@ -26,8 +26,8 @@ function PageAccueil() {
         <button class="button">
           <p>Commencer</p>
         </button>
-        <div className="cadreblanc">
-          <div data-aos="fade-up-right" data-aos-duration="2000" className="cadreblanc1">
+        <div className="cadreblanc" >
+          <div className="cadreblanc1">
             <span class="material-symbols-outlined">payments</span>
             <p>
               Avec <span>ECONO_PRO</span> dépenser intelligemment votre argent
@@ -101,7 +101,9 @@ function PageAccueil() {
       </div>
 
       <div className="contenaire-apropos">
-        <div className="enfnt1">
+        <div className="enfnt1" data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine">
           <p>
             Notre application a été conçue pour être conviviale et intuitive.
             Vous pouvez commencer à suivre vos dépenses en quelques minutes,
@@ -136,7 +138,7 @@ function PageAccueil() {
           <p>
             Offre aux utilisateurs la possibilité de définir des budgets pour
             différentes catégories de dépenses, tels que l'alimentation, le
-            logement, les loisirs, etc.
+            logement, les loisirs, etc.  
           </p>
         </div>
         <div className="enf3">
@@ -232,7 +234,7 @@ function PageAccueil() {
               />
               <span>Message</span>
             </label>
-            <button className="submit">Submit</button>
+            <button className="submit">Envoyer</button>
           </form>
         </div>
       </div>

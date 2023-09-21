@@ -4,13 +4,13 @@ class userController {
     static async create(req,res){
         try { 
             const {email,...body} = req.body
-            const user = await User.find({email:email})
+            const user = await User.findOne({email:email})
             if (user) {
-                res.status(404).json({
+                return res.status(404).json({
                     status: false,
                     message: "cet utilisateur existe déja ."
                 });
-                return
+                
             }
                 const userCreate = await User.create({
                 email:email, ...body
@@ -32,6 +32,28 @@ class userController {
             })
         }   
        
+    }
+
+    static async getall(){
+        try{
+            const user = await User.find({})
+            if (!user) {
+                return res.status(404).json({
+                    status:false,
+                    message: "Aucun utilisateur n'a été trouvé"
+                })
+            }
+            return res.status(200).json({
+                status:true,
+                message : user
+            })
+        }catch(error){
+            res.status(500).json({
+                status: false,
+                message: "Erreur de serveur"
+            })
+        }
+
     }
 } 
 export default userController;
