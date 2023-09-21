@@ -1,8 +1,12 @@
 import React from "react";
+import "../"
 
 function Dashbord() {
    return(
-    <div>mama</div>
+    <div>
+      <div className="menu"></div>
+      <div className="corpsdashbord"></div>
+    </div>
    )
 }
 export default Dashbord;
