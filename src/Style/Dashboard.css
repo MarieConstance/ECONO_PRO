@@ -30,12 +30,29 @@
     background-color: var(--ma--couleur--text);
 }
 .div-header{
-    height: 8%;
+    height: 10%;
     width: 100%;
     background-color: var(--ma--couleur--text);
 }
 .div-second{
-    height: 20%;
+    height: 30%;
     width: 100%;
-    background-color: var(--ma-couleur-principale);
+    background-color: var(--mon--autre--couleur);
+    position: absolute;
+}
+.cadre-affichache{
+    height: auto ;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    position: relative;
+    top: 5rem;
+}
+.cadre-affichache .enfant1{
+    width: 15rem;
+    height: 10rem;
+    border: 1px solid green;
+    background-color: var(--ma--couleur--text);
+    border-radius: 10px;
 }

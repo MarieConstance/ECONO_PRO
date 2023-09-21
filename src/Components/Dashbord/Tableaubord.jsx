@@ -8,6 +8,12 @@ function Dashbord() {
       <div className="corpsdashbord">
         <div className="div-header"></div>
         <div className="div-second"></div>
+        <div className="cadre-affichache">
+            <div className="enfant1"></div>
+            <div className="enfant1"></div>
+            <div className="enfant1"></div>
+            <div className="enfant1"></div>
+         </div>
       </div>
     </div>
    )
