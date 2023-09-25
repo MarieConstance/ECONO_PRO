@@ -14,31 +14,43 @@
   font-family: "Montserrat Alternates", sans-serif;
 }
 
-.espace-dashboard {
-  display: flex;
-  width: 100%;
-}
-.espace-dashboard .menu {
-  width: 13%;
-  height: 100vh;
-  background-color: var(--ma-couleur-principale);
-  border-right: 1px solid black;
-}
 .espace-dashboard .corpsdashbord {
   width: 87%;
   height: 100vh;
   background-color: rgba(255, 255, 255, 0.901);
   align-items: center;
   text-align: center;
-  display: flex;
 }
-.div-header {
-  height: 7%;
-  width: 100%;
-  background-color: va rgba(255, 255, 255, 0.901);
-}
-
 .row {
   width: 70%;
   margin: auto;
+  margin-top: 3rem;
+}
+.divbtn {
+  margin-top: 4rem;
+}
+.divbtn .btn2 {
+  margin-right: 2rem;
+  width: 10rem;
+  height: 3rem;
+  background-color: #8bd59e;
+  border: 1px solid var(--mon--autre--couleur);
+  color: var(--ma--couleur--text);
+  border-radius: 10px;
+}
+.divbtn .btn2:hover {
+  background-color: var(--ma-couleur-bouton);
+  border: 1px solid var(--ma-couleur-bouton);
+}
+.divbtn .btn3 {
+  width: 10rem;
+  height: 3rem;
+  background-color: rgba(226, 14, 14, 0.793);
+  border: 1px solid red;
+  color: var(--ma--couleur--text);
+  border-radius: 10px;
+}
+.divbtn .btn3:hover {
+  background-color: red;
+  border: 1px solid red;
 }

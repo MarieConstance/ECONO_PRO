@@ -1,29 +1,15 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import "../../Style/SaisirDepense.css";
 import SideBar from "./Sidebar";
+import "../../Style/Alerte.css";
 
-function SaisirDepense() {
+function Alerte() {
   return (
     <div className="espace-dashboard">
       <SideBar />
       <div className="corpsdashbord">
-        {/* ------formulaire------------- */}
-
+        <h1>Configuration des Alertes</h1>
         <form className="row g-3">
           <div className="col-md-6">
-            <label for="inputEmail4" class="form-label">
-              Montant
-            </label>
-            <input type="number" className="form-control" id="inputEmail4" />
-          </div>
-          <div class="col-md-6">
-            <label for="inputPassword4" class="form-label">
-              Date
-            </label>
-            <input type="date" className="form-control" id="inputPassword4" />
-          </div>
-          <div class="col-12">
             <label for="inputPassword4" class="form-label">
               Catégorie
             </label>
@@ -38,24 +24,38 @@ function SaisirDepense() {
               <option value="3">Vêtements </option>
             </select>
           </div>
-          <div class="col-12">
+          <div class="col-md-6">
             <label for="inputPassword4" class="form-label">
-              Méthode de Paiement
+              Limite
+            </label>
+            <input
+              type="number"
+              className="form-control"
+              id="inputPassword4"
+              placeholder="En Fcfa"
+            />
+          </div>
+          <div className="col-md-6">
+            <label for="inputPassword4" class="form-label">
+              Fréquence
             </label>
             <select class="form-select" aria-label="Default select example">
-              <option selected>Carte de Crédit</option>
-              <option value="1">Espèces </option>
-              <option value="2">Chèque</option>
-              <option value="3">Débit Direct</option>
-              <option value="3">Paiement Mobile </option>
+              <option selected>Quotidien</option>
+              <option value="1">Hebdomadaire</option>
+              <option value="2">Mensuel</option>
             </select>
           </div>
           <div class="col-md-6">
-          <div class="mb-3">
-            <label for="exampleFormControlTextarea1" class="form-label">Description</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            <label for="inputPassword4" class="form-label">
+            Heure de l'Alerte
+            </label>
+            <input type="time" className="form-control" id="inputPassword4" />
           </div>
-          </div>
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1"/>
+            <label class="form-check-label" for="exampleCheck1">Activer l'alerte</label>
+        </div>
+
           <div className="divbtn">
             <button type="submit" class="btn2">
               Enregistrer
@@ -65,8 +65,9 @@ function SaisirDepense() {
             </button>
           </div>
         </form>
+        <h3 className="listealerte">Liste des Alertes Configurées</h3>
       </div>
     </div>
   );
 }
-export default SaisirDepense;
+export default Alerte;

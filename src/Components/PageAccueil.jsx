@@ -11,7 +11,7 @@ import Aos from "aos";
 function PageAccueil() {
   return (
     <>
-      <Navbar />
+      <Navbar/>
       <div className="cadrefontimage">
         <div className="divcentral">
           <h2>

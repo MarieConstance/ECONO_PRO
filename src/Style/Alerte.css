@@ -1,0 +1,31 @@
+:root {
+  --ma-couleur-principale: #124660;
+  --ma-couleur-bouton: #1b9476;
+  --mon--autre--couleur: #8bd59e;
+  --ma--couleur--text: #ffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Montserrat Alternates", sans-serif;
+}
+form {
+  width: 70%;
+  margin: auto;
+  margin-top: 5rem;
+}
+.form-row {
+  display: flex;
+}
+.form-check {
+  width: 10rem;
+  margin: auto;
+  margin-top: 3rem;
+}
+.listealerte{
+    margin-top: 2rem;
+}

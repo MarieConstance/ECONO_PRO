@@ -5,6 +5,8 @@ import PageAccueil from './Components/PageAccueil';
 import Register from './Components/register';
 import Dashbord from './Components/Dashbord/tableaubord';
 import SaisirDepense from './Components/Dashbord/SaisirDepense';
+import Budget from './Components/Dashbord/Budget';
+import Alerte from './Components/Dashbord/Alerte';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 
@@ -19,6 +21,8 @@ function App() {
           <Route path='/Register' element = {<Register/>}/>
           <Route path='/Tableaubord' element = {<Dashbord/>}/>
           <Route path='/SaisirDepense' element = {<SaisirDepense/>}/>
+          <Route path='/Budget' element = {<Budget/>}/>
+          <Route path='/Alerte' element ={<Alerte/>}/>
         </Routes>
       </Suspense>
     </Router>

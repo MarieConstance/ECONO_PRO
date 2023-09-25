@@ -1,0 +1,55 @@
+:root {
+  --ma-couleur-principale: #124660;
+  --ma-couleur-bouton: #1b9476;
+  --mon--autre--couleur: #8bd59e;
+  --ma--couleur--text: #ffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Montserrat Alternates", sans-serif;
+}
+form {
+  width: 70%;
+  margin: auto;
+  margin-top: 5rem;
+}
+.form-row {
+  display: flex;
+}
+.corpsdashbord h1{
+    margin-top: 5rem;
+}
+.divbtn {
+    margin-top: 4rem;
+  }
+  .divbtn .btn2 {
+    margin-right: 2rem;
+    width: 10rem;
+    height: 3rem;
+    background-color: #8bd59e;
+    border: 1px solid var(--mon--autre--couleur);
+    color: var(--ma--couleur--text);
+    border-radius: 10px;
+  }
+  .divbtn .btn2:hover {
+    background-color: var(--ma-couleur-bouton);
+    border: 1px solid var(--ma-couleur-bouton);
+  }
+  .divbtn .btn3 {
+    width: 10rem;
+    height: 3rem;
+    background-color: rgba(226, 14, 14, 0.793);
+    border: 1px solid red;
+    color: var(--ma--couleur--text);
+    border-radius: 10px;
+  }
+  .divbtn .btn3:hover {
+    background-color: red;
+    border: 1px solid red;
+  }
+  

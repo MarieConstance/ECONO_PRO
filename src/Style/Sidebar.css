@@ -1,0 +1,59 @@
+:root {
+  --ma-couleur-principale: #124660;
+  --ma-couleur-bouton: #1b9476;
+  --mon--autre--couleur: #8bd59e;
+  --ma--couleur--text: #ffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Montserrat Alternates", sans-serif;
+}
+.espace-dashboard .menu {
+  width: 13%;
+  height: 100vh;
+  background-color: var(--ma-couleur-principale);
+  border-right: 1px solid black;
+}
+.monmenu {
+  margin-top: 7rem;
+  height: 60%;
+  line-height: 50px;
+  padding: 10px;
+  font-size: 1rem;
+  color: var(--ma--couleur--text);
+  /* position: sticky;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 110px;
+    height: 100vh;
+    padding: 0 1;
+    color: #fff;
+    overflow: hidden;
+    transition: all 0.5s linear; */
+}
+.menu:hover {
+  width: 120px;
+  transition: 0.5s;
+}
+
+.monmenu span {
+  font-size: 2.2rem;
+  margin-top: 15px;
+  color: var(--ma--couleur--text);
+}
+.monmenu .lien {
+  color: var(--ma--couleur--text);
+  text-decoration: none;
+}
+.monmenu #active {
+  color: var(--mon--autre--couleur);
+}
+.monmenu .lien:hover {
+  color: var(--mon--autre--couleur);
+}
