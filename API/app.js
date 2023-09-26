@@ -7,7 +7,7 @@ import routerUser from "./routes/user.js";
 dotenv.config();
 console.log(process.env.test);
 
-const port  = 3000;
+const port  = 3000;   
 const app = express();
 
 app.use(cors());

@@ -8,4 +8,4 @@ export const connectDb = async ()=>{
     await mongoose.connect(uri, {
         dbName: "finance"
 })
-}
+} 

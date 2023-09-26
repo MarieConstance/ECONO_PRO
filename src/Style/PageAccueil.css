@@ -314,6 +314,23 @@ body {
 .contenair-contact p {
   margin-left: 20px;
 }
+footer{
+  border: 1px solid red ;
+  width: 100%;
+  height: 20rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 12rem;
+}
+footer .partie1{
+  width: 15rem;
+  border: 1px solid orange;
+}
+.partie1 img{
+  width: 8rem;
+  height: 5rem;
+}
 
 /*-----------------------------RESPOPNSIVITE------------------------------*/
 

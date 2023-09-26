@@ -6,6 +6,7 @@ import imag from "../assets/calcule1.jpg";
 import image from "../assets/epargnecochon.jpg";
 import img from "../assets/8749.jpg";
 import imge from "../assets/apropos3.jpg";
+import logo from "../assets/MonLogo.png";
 import Aos from "aos";
 
 function PageAccueil() {
@@ -238,6 +239,15 @@ function PageAccueil() {
           </form>
         </div>
       </div>
+      
+      <footer>
+        <div className="partie1">
+         <img src={logo} /> 
+        </div>
+        <div className="partie1"></div>
+        <div className="partie1"></div>
+        <div className="partie1"></div>
+      </footer>
     </>
   );
 }

@@ -8,7 +8,7 @@ function Navbar() {
   const toglle = (event) => {
     const close = document.getElementById("close");
     close.style.display = "block";
-    close.addEventListener("click", (ev) => {
+    close.addEventListener("click", (ev) => {  
       nav.current.classList.remove("active");
       event.target.style.display = "block";
       ev.target.style.display = "none";

@@ -1,10 +1,11 @@
 import User from "../models/user.js";
-
+import bcrypt from "bcrypt"
 class userController {
     static async create(req,res){
         try { 
-            const {email,...body} = req.body
-            const user = await User.findOne({email:email})
+            console.log(req.body)
+            const {email,password,...body} = req.body
+            const user = await User.findOne({email:email})   
             if (user) {
                 return res.status(404).json({
                     status: false,
@@ -13,14 +14,16 @@ class userController {
                 
             }
                 const userCreate = await User.create({
-                email:email, ...body
+                email:email,
+                password: await bcrypt.hash(password,10),
+                ...body
             })
             if(!userCreate ){
                 res.status(404).json({
                     status: false,
                     message: "cet utilisateur non enregistré."
                 });
-                return
+                return;
             }
             res.status(200).json({
                 status: true,
@@ -53,7 +56,37 @@ class userController {
                 message: "Erreur de serveur"
             })
         }
-
     }
+
+    static async login(res,req){
+        try {
+            User.findOne({email:req.body.email})
+           .then((data)=>{
+            if(!data){
+                res.status(400).json({msg:"Email introuvable"})
+                return
+            }
+            bcrypt.compare(req.body.password,data.password)
+            .then((com)=>{
+                if (!com) {
+                    res.status(400).json({msg:"Mot de passe incorrect"})
+                    return
+                }else{
+                    res.status(201).json({
+                        userId:data._id,
+                        status:"User",
+                        token: jwt.sign({userId: data._id}, "RANDAOM_TOKEN_KEY",{expiresIn: 24*3600})
+                    })
+                }
+            })
+            .catch((error)=>error.message)
+           }) 
+           .catch((error)=>res.status(400).json({error:error.message}))
+        } 
+        catch (error) {
+            res.status(500).json({error:error.message})
+        }
+    }
+
 } 
 export default userController;
