@@ -1,12 +1,14 @@
 import React from "react";
 import "../Style/Register.css"
-import { Link } from "react-router-dom";
+import { Link, redirect } from "react-router-dom";
 import { apiUrl } from "../../API/config/env";
 import { useForm } from "react-hook-form";
 import { useMutation } from "@tanstack/react-query";
 import axios from 'axios'
+import { useNavigate } from "react-router-dom";
 
 function Register() {
+    const navigate = useNavigate();
       const{register, handleSubmit, watch}=useForm(
         {
             nom: "",
@@ -28,7 +30,7 @@ function Register() {
             return response
         },
         onSuccess: (suces)=>{
-            console.log(suces)
+            navigate("/Login")
         },
         onError: (e)=>{
             console.log(e.response.data.message)

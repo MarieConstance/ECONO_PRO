@@ -13,7 +13,16 @@
   list-style: none;
   font-family: "Montserrat Alternates", sans-serif;
 }
-.espace-dashboard .menu {
+.navigation{
+  position: fixed;
+  inset: 20px;
+  background-color: var(--ma-couleur-principale);
+  width: 80px;
+  border-left:10px;
+  border-radius: 50px;
+  overflow: hidden;
+}
+/* .espace-dashboard .menu {
   width: 13%;
   height: 100vh;
   background-color: var(--ma-couleur-principale);
@@ -25,7 +34,7 @@
   line-height: 50px;
   padding: 10px;
   font-size: 1rem;
-  color: var(--ma--couleur--text);
+  color: var(--ma--couleur--text); */
   /* position: sticky;
     top: 0;
     left: 0;
@@ -36,7 +45,7 @@
     color: #fff;
     overflow: hidden;
     transition: all 0.5s linear; */
-}
+/* }
 .menu:hover {
   width: 120px;
   transition: 0.5s;
@@ -56,4 +65,4 @@
 }
 .monmenu .lien:hover {
   color: var(--mon--autre--couleur);
-}
+} */

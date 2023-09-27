@@ -46,9 +46,9 @@ function Navbar() {
         <Link to="/Login" className="btn">
           Se connecter
         </Link>
-        <a href="#" className="btn1">
+        <Link to="/Register" className="btn1">
           S'inscrire
-        </a>
+        </Link>
       </div>
       <span
         // onClick={() => {

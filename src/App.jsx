@@ -10,6 +10,8 @@ import Alerte from './Components/Dashbord/Alerte';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { QueryClient, QueryClientProvider, } from '@tanstack/react-query';
 import {useRef} from 'react';
+import Footer from './Components/Footer';
+import Topbar from './Components/Dashbord/Topbar';
 
 
 function App() {
@@ -26,15 +28,16 @@ function App() {
           <Route path='/Tableaubord' element = {<Dashbord/>}/>
           <Route path='/SaisirDepense' element = {<SaisirDepense/>}/>
           <Route path='/Budget' element = {<Budget/>}/>
-          <Route path='/Alerte' element ={<Alerte/>}/>
+          <Route path='/Alerte' element = {<Alerte/>}/>
+          <Route path='/Footer' element ={<Footer/>}/>
+          <Route path='/Topbar' element ={<Topbar/>}/>
+          <Route path='/Sidebar' element ={<Sidebar/>}/>
         </Routes>
         </QueryClientProvider>
       </Suspense>
     </Router>
     </>
-    
-      
-   
+     
    
   ) 
   

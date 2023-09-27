@@ -58,7 +58,7 @@ class userController {
         }
     }
 
-    static async login(res,req){
+    static async login(req,res){
         try {
             User.findOne({email:req.body.email})
            .then((data)=>{
@@ -66,25 +66,30 @@ class userController {
                 res.status(400).json({msg:"Email introuvable"})
                 return
             }
+            
             bcrypt.compare(req.body.password,data.password)
+
             .then((com)=>{
                 if (!com) {
                     res.status(400).json({msg:"Mot de passe incorrect"})
                     return
-                }else{
-                    res.status(201).json({
+                }
+                    console.log(com);
+                    res.status(201).json ({
                         userId:data._id,
                         status:"User",
                         token: jwt.sign({userId: data._id}, "RANDAOM_TOKEN_KEY",{expiresIn: 24*3600})
                     })
-                }
+                   
             })
-            .catch((error)=>error.message)
+            .catch((error)=>console.log(error.message))
+            
            }) 
            .catch((error)=>res.status(400).json({error:error.message}))
         } 
         catch (error) {
             res.status(500).json({error:error.message})
+            return 
         }
     }
 

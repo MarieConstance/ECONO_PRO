@@ -1,0 +1,103 @@
+:root {
+    --ma-couleur-principale: #124660;
+    --ma-couleur-bouton: #1b9476;
+    --mon--autre--couleur: #8bd59e;
+    --ma--couleur--text: #ffff;
+  }
+  
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Montserrat Alternates", sans-serif;
+}
+footer{
+    background-color: var(--ma-couleur-bouton);
+    margin-top: 15rem;
+}
+.footerContenair{
+    width: 100%;
+    padding: 30px 80px 0;
+    height: auto;
+} 
+.socialIcons{
+    display: flex;
+    justify-content: center;
+} 
+.socialIcons a{
+    text-decoration: none;
+    padding: 10px;
+    background-color: var(--ma--couleur--text);
+    margin: 10px;
+    border-radius: 50%;
+}
+.socialIcons a i{
+    font-size: 1.5rem;
+    color: var(--ma-couleur-principale);
+    opacity: 0.9;
+}
+.socialIcons a:hover{
+    background-color: var(--mon--autre--couleur);
+    transition: 0.5s;
+}
+.socialIcons a i:hover{
+    color: var(--ma--couleur--text);
+    transition: 0.5s;
+}
+.footerNav{
+    margin: 30px 0;
+}
+.footerNav ul{
+    display: flex;
+    justify-content: center;
+    
+}
+.footerNav ul li a{
+    color: var(--ma--couleur--text);
+    margin: 20px;
+    text-decoration: none;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+.footerNav ul li a:hover{
+    color: var(--ma-couleur-principale);
+}
+.footerBottom{
+    background-color: var(--ma-couleur-principale);
+    text-align: center;
+    padding: 20px;
+}
+.footerBottom p{
+    color: var(--ma--couleur--text);
+    font-size: .8rem;
+}
+.span1{
+    color: var(--mon--autre--couleur);
+    font-weight: 400;
+}
+.span2{
+    color: var(--mon--autre--couleur);
+    font-weight: 400;
+}
+@media (max-width:425px){
+    .footerNav ul{
+        flex-direction: column;
+    }
+    .footerNav ul li{
+        width: 100%;
+        text-align: center;
+        margin: 8px;
+    }
+}
+@media (max-width:325px){
+    .footerNav ul{
+        flex-direction: column;
+    }
+    .footerNav ul li{
+        width: 100%;
+        text-align: center;
+        margin: 8px;
+    }
+}

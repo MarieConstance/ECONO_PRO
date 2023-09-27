@@ -87,9 +87,29 @@
   color: var(--ma-couleur-principale);
 }
 .table tbody tr {
-  height: 4rem;
+  height: 2rem;
   background-color: var(--ma--couleur--text);
 }
 .table tbody tr:hover {
   background-color: var(--mon--autre--couleur);
+}
+
+@media(max-width:1440px){
+  .cadre-affichache {
+    top: 4rem;
+    height: 8rem;
+  }
+  .cadre-affichache .enfant1 {
+     width: 15rem;
+     margin-bottom: 1rem;
+  }
+  .enfant1-affiche h3 {
+    font-size: 1.1rem;
+  }
+  #icons {
+    font-size: 2rem;
+  }
+  .enfant1 h2 {
+    font-size: 1.5rem;
+  }
 }
