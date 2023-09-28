@@ -4,10 +4,7 @@ import "../Style/Formulairecontact.css";
 import Navbar from "./Navbar";
 import imag from "../assets/calcule1.jpg";
 import image from "../assets/epargnecochon.jpg";
-import img from "../assets/8749.jpg";
 import imge from "../assets/apropos3.jpg";
-import logo from "../assets/MonLogo.png";
-import Aos from "aos";
 import Footer from "./Footer";
 
 

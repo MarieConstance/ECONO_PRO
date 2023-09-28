@@ -1,7 +1,6 @@
 import React from "react";
 // import SideBar from "./Sidebar";
 import "../../Style/Budget.css";
-import { Link } from "react-router-dom";
 
 function Budget() {
   return (
