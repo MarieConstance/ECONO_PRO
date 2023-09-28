@@ -32,7 +32,7 @@ function PageAccueil() {
         </button>
         <div className="cadreblanc" >
           <div className="cadreblanc1">
-            <span class="material-symbols-outlined">payments</span>
+            <span className="material-symbols-outlined">payments</span>
             <p>
               Avec <span>ECONO_PRO</span> dépenser intelligemment votre argent
               tout en économisant vos finances.
@@ -40,14 +40,14 @@ function PageAccueil() {
           </div>
           <div className="divmilieu">
             <div className="divmilieu1">
-              <span class="material-symbols-outlined">category</span>
+              <span className="material-symbols-outlined">category</span>
               <p>
                 Avec <span>ECONO_PRO</span> définissez votre budget mensuel en
                 fonction de différentes catégories de dépenses.
               </p>
             </div>
             <div className="divmilieu2">
-              <span class="material-symbols-outlined">description</span>
+              <span className="material-symbols-outlined">description</span>
               <p>
                 Avec <span>ECONO_PRO</span> vous avez un rapport financier
                 détaillés sur la situation financière.
@@ -55,7 +55,7 @@ function PageAccueil() {
             </div>
           </div>
           <div className="cadreblanc1">
-            <span class="material-symbols-outlined">notifications_active</span>
+            <span className="material-symbols-outlined">notifications_active</span>
             <p>
               Avec <span>ECONO_PRO</span> recevez une alerte lorsque vos
               dépenses mensuelles dépasse votre budget.
@@ -129,7 +129,7 @@ function PageAccueil() {
       </h2>
       <div className="contenair-service">
         <div className="enf1">
-          <span class="material-symbols-outlined">payments</span>
+          <span className="material-symbols-outlined">payments</span>
           <h2>Gestion des Revenus</h2>
           <p>
             Permettre aux utilisateurs d'enregistrer leurs revenus, salaires,
@@ -137,7 +137,7 @@ function PageAccueil() {
           </p>
         </div>
         <div className="enf2">
-          <span class="material-symbols-outlined">category</span>
+          <span className="material-symbols-outlined">category</span>
           <h2>Création de Budgets </h2>
           <p>
             Offre aux utilisateurs la possibilité de définir des budgets pour
@@ -146,7 +146,7 @@ function PageAccueil() {
           </p>
         </div>
         <div className="enf3">
-          <span class="material-symbols-outlined">notifications_active</span>
+          <span className="material-symbols-outlined">notifications_active</span>
           <h2>Alertes et Notifications</h2>
           <p>
             Permettre aux utilisateurs de configurer des alertes pour être
@@ -163,7 +163,7 @@ function PageAccueil() {
       <div className="contenair-contact">
         <div className="enf1">
           <div>
-            <span class="material-symbols-outlined">pin_drop</span>
+            <span className="material-symbols-outlined">pin_drop</span>
             <p>
               Localisation:
               <br />
@@ -171,7 +171,7 @@ function PageAccueil() {
             </p>
           </div>
           <div>
-            <span class="material-symbols-outlined">stacked_email</span>
+            <span className="material-symbols-outlined">stacked_email</span>
             <p>
               Email:
               <br />
@@ -180,7 +180,7 @@ function PageAccueil() {
           </div>
 
           <div>
-            <span class="material-symbols-outlined">phone_iphone</span>
+            <span className="material-symbols-outlined">phone_iphone</span>
             <p>
               Téléphone:
               <br />

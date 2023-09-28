@@ -35,21 +35,21 @@ function Login() {
     const onSubmit = (data)=> enregistrer(data);
   return (
     <form className="form" onSubmit={handleSubmit(onSubmit)}>
-    <p class="title">Connexion</p>
-    <p class="message">Connectez-vous maintenant à notre application. </p>
+        <p className="title">Connexion</p>
+        <p className="message">Connectez-vous maintenant à notre application. </p>
+                
+        <label>
+            <input className="input" {...register("email", { required: true })} type="email" placeholder="" required=""/>
+            <span>Email</span>
+        </label> 
             
-    <label>
-        <input className="input" {...register("email", { required: true })} type="email" placeholder="" required=""/>
-        <span>Email</span>
-    </label> 
-        
-    <label>
-        <input className="input" {...register("password", { required: true })} type="password" placeholder="" required=""/>
-        <span>Password</span>
-    </label>
-    <button className="submit" > Connexion </button>
-    <p class="signin"> N'avez vous pas de compte ?<Link to="/Register">S'inscrire</Link> </p>
-</form>
+        <label>
+            <input className="input" {...register("password", { required: true })} type="password" placeholder="" required=""/>
+            <span>Password</span>
+        </label>
+        <button className="submit" > Connexion </button>
+        <p className="signin"> N'avez vous pas de compte ?<Link to="/Register">S'inscrire</Link> </p>
+    </form>
   );
 }
 export default Login;

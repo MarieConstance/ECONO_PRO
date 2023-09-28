@@ -11,10 +11,10 @@ function Budget() {
         <h1>Création de Budget Mensuel</h1>
         <form className="row g-3">
           <div className="col-md-6">
-            <label for="inputPassword4" class="form-label">
+            <label for="inputPassword4" className="form-label">
               Mois
             </label>
-            <select class="form-select" aria-label="Default select example">
+            <select className="form-select" aria-label="Default select example">
               <option selected>Janvier</option>
               <option value="1">Février</option>
               <option value="2">Mars</option>
@@ -29,11 +29,11 @@ function Budget() {
               <option value="3">Décembre </option>
             </select>
           </div>
-          <div class="col-md-6">
-            <label for="inputPassword4" class="form-label">
+          <div className="col-md-6">
+            <label for="inputPassword4" className="form-label">
               Année
             </label>
-            <select class="form-select" aria-label="Default select example">
+            <select className="form-select" aria-label="Default select example">
               <option selected>2023</option>
               <option value="1">2024</option>
               <option value="2">2025</option>
@@ -46,59 +46,59 @@ function Budget() {
           </div>
           <h5> Catégories de Dépenses:</h5>
           <div className="col-md-6">
-            <label for="inputPassword4" class="form-label">
+            <label for="inputPassword4" className="form-label">
               Alimentation
             </label>
             <input type="number" className="form-control" id="inputPassword4" />
           </div>
-          <div class="col-md-6">
-            <label for="inputPassword4" class="form-label">
+          <div className="col-md-6">
+            <label for="inputPassword4" className="form-label">
               Logement
             </label>
             <input type="number" className="form-control" id="inputPassword4" />
           </div>
           <div className="col-md-6">
-            <label for="inputPassword4" class="form-label">
+            <label for="inputPassword4" className="form-label">
               Transport
             </label>
             <input type="number" className="form-control" id="inputPassword4" />
           </div>
-          <div class="col-md-6">
-            <label for="inputPassword4" class="form-label">
+          <div className="col-md-6">
+            <label for="inputPassword4" className="form-label">
               Divertissement
             </label>
             <input type="number" className="form-control" id="inputPassword4" />
           </div>
           <div className="col-md-6">
-            <label for="inputPassword4" class="form-label">
+            <label for="inputPassword4" className="form-label">
               Voyages
             </label>
             <input type="number" className="form-control" id="inputPassword4" />
           </div>
-          <div class="col-md-6">
-            <label for="inputPassword4" class="form-label">
+          <div className="col-md-6">
+            <label for="inputPassword4" className="form-label">
               Santé
             </label>
             <input type="number" className="form-control" id="inputPassword4" />
           </div>
           <div className="col-md-6">
-            <label for="inputPassword4" class="form-label">
+            <label for="inputPassword4" className="form-label">
               Éducation
             </label>
             <input type="number" className="form-control" id="inputPassword4" />
           </div>
-          <div class="col-md-6">
-            <label for="inputPassword4" class="form-label">
+          <div className="col-md-6">
+            <label for="inputPassword4" className="form-label">
               Vêtements
             </label>
             <input type="number" className="form-control" id="inputPassword4" />
           </div>
 
           <div className="divbtn">
-            <button type="submit" class="btn2">
+            <button type="submit" className="btn2">
               Enregistrer
             </button>
-            <button type="submit" class="btn3">
+            <button type="submit" className="btn3">
               Annuler
             </button>
           </div>

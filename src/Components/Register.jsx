@@ -41,7 +41,7 @@ function Register() {
         <form className="form" onSubmit={handleSubmit(onSubmit)}>
             <p className="title">Inscription </p>
             <p className="message">Inscrivez-vous maintenant et obtenez un accès complet à notre application. </p>
-            <div class="flex">
+            <div className="flex">
                 <label>
                     <input className="input" {...register("nom", { required: true })} type="text" placeholder="" required=""/>
                     <span>Nom</span>

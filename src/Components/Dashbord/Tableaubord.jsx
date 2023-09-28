@@ -15,7 +15,7 @@ function Dashbord() {
          <div className="enfant1">
              <div className="enfant1-affiche">
                  <h3>Dépenses effectuées</h3>
-                 <span class="material-symbols-outlined" id="icons">
+                 <span className="material-symbols-outlined" id="icons">
                  payments
                  </span>
              </div>
@@ -24,7 +24,7 @@ function Dashbord() {
          <div className="enfant1">
              <div className="enfant1-affiche">
                  <h3>Budget Total</h3>
-                 <span class="material-symbols-outlined" id="icons">
+                 <span className="material-symbols-outlined" id="icons">
                      account_balance_wallet
                  </span>
              </div>
@@ -34,7 +34,7 @@ function Dashbord() {
          <div className="enfant1">
              <div className="enfant1-affiche">
                  <h3>Catégories</h3>
-                 <span class="material-symbols-outlined" id="icons">
+                 <span className="material-symbols-outlined" id="icons">
                      category
                  </span>
              </div>
@@ -44,7 +44,7 @@ function Dashbord() {
          <div className="enfant1">
              <div className="enfant1-affiche">
                  <h3>Total Alerte</h3>
-                 <span class="material-symbols-outlined" id="icons">
+                 <span className="material-symbols-outlined" id="icons">
                      notifications_active
                  </span>
              </div>

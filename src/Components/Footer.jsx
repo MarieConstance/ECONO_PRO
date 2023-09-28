@@ -7,10 +7,10 @@ function Footer(){
         <footer>
             <div className="footerContenair">
             <div className="socialIcons">
-                <a href=""><i class="fa-regular fa-envelope"></i></a>
-                <a href=""><i class="fa-brands fa-facebook"></i></a>
-                <a href=""><i class="fa-brands fa-twitter"></i></a>
-                <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href=""><i className="fa-regular fa-envelope"></i></a>
+                <a href=""><i className="fa-brands fa-facebook"></i></a>
+                <a href=""><i className="fa-brands fa-twitter"></i></a>
+                <a href=""><i className="fa-brands fa-linkedin-in"></i></a>
             </div>
             <div className="footerNav">
             <ul>

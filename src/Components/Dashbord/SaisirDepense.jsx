@@ -12,22 +12,22 @@ function SaisirDepense() {
 
         <form className="row g-3">
           <div className="col-md-6">
-            <label for="inputEmail4" class="form-label">
+            <label for="inputEmail4" className="form-label">
               Montant
             </label>
             <input type="number" className="form-control" id="inputEmail4" />
           </div>
-          <div class="col-md-6">
-            <label for="inputPassword4" class="form-label">
+          <div className="col-md-6">
+            <label for="inputPassword4" className="form-label">
               Date
             </label>
             <input type="date" className="form-control" id="inputPassword4" />
           </div>
-          <div class="col-12">
-            <label for="inputPassword4" class="form-label">
+          <div className="col-12">
+            <label for="inputPassword4" className="form-label">
               Catégorie
             </label>
-            <select class="form-select" aria-label="Default select example">
+            <select className="form-select" aria-label="Default select example">
               <option selected>Alimentation</option>
               <option value="1">Logement</option>
               <option value="2">Transport</option>
@@ -38,11 +38,11 @@ function SaisirDepense() {
               <option value="3">Vêtements </option>
             </select>
           </div>
-          <div class="col-12">
-            <label for="inputPassword4" class="form-label">
+          <div className="col-12">
+            <label for="inputPassword4" className="form-label">
               Méthode de Paiement
             </label>
-            <select class="form-select" aria-label="Default select example">
+            <select className="form-select" aria-label="Default select example">
               <option selected>Carte de Crédit</option>
               <option value="1">Espèces </option>
               <option value="2">Chèque</option>
@@ -50,17 +50,17 @@ function SaisirDepense() {
               <option value="3">Paiement Mobile </option>
             </select>
           </div>
-          <div class="col-md-6">
-          <div class="mb-3">
-            <label for="exampleFormControlTextarea1" class="form-label">Description</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          <div className="col-md-6">
+          <div className="mb-3">
+            <label for="exampleFormControlTextarea1" className="form-label">Description</label>
+            <textarea className="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
           </div>
           </div>
           <div className="divbtn">
-            <button type="submit" class="btn2">
+            <button type="submit" className="btn2">
               Enregistrer
             </button>
-            <button type="submit" class="btn3">
+            <button type="submit" className="btn3">
               Annuler
             </button>
           </div>
