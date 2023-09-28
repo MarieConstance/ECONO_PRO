@@ -1,13 +1,13 @@
 import React from "react";
 import "../../Style/Dashboard.css";
 import { Link } from "react-router-dom";
-import SideBar from "./Sidebar";
+// import SideBar from "./Sidebar";
 
 function Dashbord() {
   return (
    <>
    <div className="espace-dashboard">
-   <SideBar/>
+   {/* <SideBar/> */}
    <div className="corpsdashbord">
      <div className="div-header"></div>
      <div className="div-second"></div>

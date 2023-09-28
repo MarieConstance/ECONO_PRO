@@ -3,7 +3,7 @@ import Navbar from './Components/Navbar';
 import Login from './Components/login';
 import PageAccueil from './Components/PageAccueil';
 import Register from './Components/Register';
-import Dashbord from './Components/Dashbord/tableaubord';
+import Dashbord from './Components/Dashbord/Tableaubord';
 import SaisirDepense from './Components/Dashbord/SaisirDepense';
 import Budget from './Components/Dashbord/Budget';
 import Alerte from './Components/Dashbord/Alerte';
@@ -31,7 +31,7 @@ function App() {
           <Route path='/Alerte' element = {<Alerte/>}/>
           <Route path='/Footer' element ={<Footer/>}/>
           <Route path='/Topbar' element ={<Topbar/>}/>
-          <Route path='/Sidebar' element ={<Sidebar/>}/>
+          {/* <Route path='/Sidebar' element ={<Sidebar/>}/> */}
         </Routes>
         </QueryClientProvider>
       </Suspense>

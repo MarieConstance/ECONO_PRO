@@ -1,12 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "../../Style/SaisirDepense.css";
-import SideBar from "./Sidebar";
+// import SideBar from "./Sidebar";
 
 function SaisirDepense() {
   return (
     <div className="espace-dashboard">
-      <SideBar />
+      {/* <SideBar /> */}
       <div className="corpsdashbord">
         {/* ------formulaire------------- */}
 

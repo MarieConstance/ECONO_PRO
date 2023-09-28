@@ -1,5 +1,6 @@
 import User from "../models/user.js";
 import bcrypt from "bcrypt"
+import jwt from 'jsonwebtoken'
 class userController {
     static async create(req,res){
         try { 
@@ -60,26 +61,27 @@ class userController {
 
     static async login(req,res){
         try {
+           
             User.findOne({email:req.body.email})
            .then((data)=>{
             if(!data){
                 res.status(400).json({msg:"Email introuvable"})
                 return
             }
-            
             bcrypt.compare(req.body.password,data.password)
-
             .then((com)=>{
                 if (!com) {
                     res.status(400).json({msg:"Mot de passe incorrect"})
                     return
                 }
-                    console.log(com);
+                else{
                     res.status(201).json ({
                         userId:data._id,
                         status:"User",
                         token: jwt.sign({userId: data._id}, "RANDAOM_TOKEN_KEY",{expiresIn: 24*3600})
                     })
+                }
+                
                    
             })
             .catch((error)=>console.log(error.message))
