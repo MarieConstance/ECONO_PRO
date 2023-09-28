@@ -10,6 +10,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { QueryClient, QueryClientProvider, } from '@tanstack/react-query';
 import Footer from '../src/Components/Footer';
 import Topbar from '../src/Components/Dashbord/Topbar';
+import SideBar from './Components/Dashbord/Sidebar';
 
 
 function App() {
@@ -29,7 +30,7 @@ function App() {
               <Route path='/Alerte' element={<Alerte />} />
               <Route path='/Footer' element={<Footer />} />
               <Route path='/Topbar' element={<Topbar />} />
-              {/* <Route path='/Sidebar' element ={<Sidebar/>}/> */}
+              <Route path='/Sidebar' element ={<SideBar/>}/>
             </Routes>
           </QueryClientProvider>
         </Suspense>

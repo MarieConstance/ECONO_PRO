@@ -13,56 +13,125 @@
   list-style: none;
   font-family: "Montserrat Alternates", sans-serif;
 }
-.navigation{
-  position: fixed;
-  inset: 20px;
-  background-color: var(--ma-couleur-principale);
-  width: 80px;
-  border-left:10px;
-  border-radius: 50px;
-  overflow: hidden;
-}
-/* .espace-dashboard .menu {
-  width: 13%;
+.Sidebar {
+  position: sticky;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 110px;
   height: 100vh;
+  padding: 0 1;
+  color: #fff;
+  overflow: hidden;
+  transition: all 0.5s linear;
   background-color: var(--ma-couleur-principale);
-  border-right: 1px solid black;
-}
-.monmenu {
-  margin-top: 7rem;
-  height: 60%;
-  line-height: 50px;
-  padding: 10px;
-  font-size: 1rem;
-  color: var(--ma--couleur--text); */
-  /* position: sticky;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    width: 110px;
-    height: 100vh;
-    padding: 0 1;
-    color: #fff;
-    overflow: hidden;
-    transition: all 0.5s linear; */
-/* }
-.menu:hover {
-  width: 120px;
-  transition: 0.5s;
 }
 
-.monmenu span {
-  font-size: 2.2rem;
-  margin-top: 15px;
-  color: var(--ma--couleur--text);
+.Sidebar:hover {
+  width: 240px;
+  transition: 0.5s;
 }
-.monmenu .lien {
+.lago {
+  height: 80px;
+  padding: 16px;
+}
+
+.manu {
+  height: 88%;
+  position: relative;
+  padding: 0;
+}
+.manu li {
+  padding: 1rem;
+  margin: 8px 0;
+  border-radius: 8px;
+  transition: all 0.5s ease-in-out;
+}
+.manu li:hover,
+.active {
+  background: var(--mon--autre--couleur);
+}
+
+.manu a {
   color: var(--ma--couleur--text);
+  font-size: 14px;
   text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
 }
-.monmenu #active {
-  color: var(--mon--autre--couleur);
+
+.manu a span {
+  overflow: hidden;
 }
-.monmenu .lien:hover {
-  color: var(--mon--autre--couleur);
-} */
+
+.logout {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+.logout .ice {
+  color: var(--ma--couleur--text);
+}
+.ice {
+  font-size: 2rem;
+}
+
+.main--content {
+  position: relative;
+  background: #ebe9e9;
+  width: 100%;
+  padding: 1rem;
+}
+.head--wrapper img {
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.head--wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 10px 2rem;
+  margin-bottom: 1rem;
+}
+
+.head--title {
+  color: rgba(113, 99, 186, 225);
+}
+
+.user--info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.searc--box {
+  background: rgb(237, 237, 237);
+  border-radius: 15px;
+  color: rgba(113, 99, 186, 225);
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 4px 12px;
+}
+
+.searc--box input {
+  padding: 10px;
+}
+
+.searc--box .ko {
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.5s ease-out;
+}
+
+.searc--box .ko:hover {
+  transform: scale(1.2);
+}
