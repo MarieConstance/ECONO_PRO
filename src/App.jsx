@@ -1,15 +1,15 @@
 import React, { Suspense } from 'react';
-import Login from './Components/login';
-import PageAccueil from './Components/PageAccueil';
-import Register from './Components/Register';
-import Dashbord from './Components/Dashbord/Tableaubord';
-import SaisirDepense from './Components/Dashbord/SaisirDepense';
-import Budget from './Components/Dashbord/Budget';
-import Alerte from './Components/Dashbord/Alerte';
+import Login from '../src/Components/Login';
+import PageAccueil from '../src/Components/PageAccueil';
+import Register from '../src/Components/Register';
+import Dashbord from '../src/Components/Dashbord/Tableaubord';
+import SaisirDepense from '../src/Components/Dashbord/SaisirDepense';
+import Budget from '../src/Components/Dashbord/Budget';
+import Alerte from '../src/Components/Dashbord/Alerte';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { QueryClient, QueryClientProvider, } from '@tanstack/react-query';
-import Footer from './Components/Footer';
-import Topbar from './Components/Dashbord/Topbar';
+import Footer from '../src/Components/Footer';
+import Topbar from '../src/Components/Dashbord/Topbar';
 
 
 function App() {
