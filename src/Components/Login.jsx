@@ -5,8 +5,10 @@ import { useForm } from "react-hook-form";
 import { useMutation } from "@tanstack/react-query";
 import { apiUrl } from "../../API/config/env";
 import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
-function Login() {   
+function Login() { 
+    const navigate = useNavigate(); 
     const {register, handleSubmit, watch}= useForm(
         {
             email:"",
@@ -24,6 +26,7 @@ function Login() {
         mutationFn: (donne)=>log(donne),
         onSuccess: (suces)=>{
             console.log(suces);
+            navigate("/Tableaubord")
         },
         onError:(e)=>{
             console.log(e);
