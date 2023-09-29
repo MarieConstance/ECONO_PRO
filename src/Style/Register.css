@@ -6,6 +6,7 @@
 }
 .contenu-formulaire{
   width: 100%;
+  height: 120vh;
   align-items: center;
   justify-content: center;
   background-color: var(--ma-couleur-principale);
@@ -22,6 +23,7 @@
   background-color: var(--ma-couleur-principale);
   color: #fff;
   border: 2px solid var(--mon--autre--couleur);
+  top: -10rem;
 }
 
 .title {
