@@ -4,14 +4,14 @@
   --mon--autre--couleur: #8bd59e;
   --ma--couleur--text: #ffff;
 }
-.contenu-formulaire{
+.contenu-formulaire {
   width: 100%;
   align-items: center;
   justify-content: center;
   background-color: var(--ma-couleur-principale);
 }
 
-form {
+.form {
   flex-direction: column;
   gap: 10px;
   max-width: 30px;
@@ -20,7 +20,6 @@ form {
   background-color: #1a1a1a;
   color: #fff;
   border: 1px solid #333;
- 
 }
 
 .title {
@@ -32,7 +31,6 @@ form {
   align-items: center;
   padding-left: 30px;
   color: var(--ma--couleur--text);
- 
 }
 
 .title::before,
@@ -46,7 +44,7 @@ form {
   background-color: var(--ma--couleur--text);
 }
 
-.message, 
+.message,
 .signin {
   font-size: 14.5px;
   color: rgba(255, 255, 255, 0.7);
@@ -119,7 +117,7 @@ form {
   border-radius: 10px;
   color: #fff;
   font-size: 16px;
-  transform: .3s ease;
+  transform: 0.3s ease;
   background-color: #00bfff;
 }
 
