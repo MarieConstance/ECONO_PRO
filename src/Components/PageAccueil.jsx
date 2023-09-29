@@ -6,8 +6,8 @@ import imag from "../assets/calcule1.jpg";
 import image from "../assets/epargnecochon.jpg";
 import imge from "../assets/apropos3.jpg";
 import Footer from "./Footer";
-import ScrollReveal from "scrollreveal";
-import { useEffect } from "react";
+// import ScrollReveal from "scrollreveal";
+// import { useEffect } from "react";
 
 function PageAccueil() {
 

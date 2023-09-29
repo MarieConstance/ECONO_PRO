@@ -4,18 +4,23 @@
   --mon--autre--couleur: #8bd59e;
   --ma--couleur--text: #ffff;
 }
+.contenu-formulaire{
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--ma-couleur-principale);
+}
 
-.form {
-  display: flex;
+form {
   flex-direction: column;
   gap: 10px;
   max-width: 30px;
   padding: 10px;
   border-radius: 20px;
-  position: relative;
   background-color: #1a1a1a;
   color: #fff;
   border: 1px solid #333;
+ 
 }
 
 .title {

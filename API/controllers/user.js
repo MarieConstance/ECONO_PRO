@@ -1,4 +1,5 @@
 import User from "../models/user.js";
+import depense from "../models/depense.js";
 import bcrypt from "bcrypt"
 import jwt from 'jsonwebtoken'
 class userController {
@@ -91,9 +92,45 @@ class userController {
         } 
         catch (error) {
             res.status(500).json({error:error.message})
+            
             return 
         }
     }
+
+
+    // ...
+    
+    static async enregistrerDepense(req, res) {
+      try {
+        // Extrayez les données de la requête
+        const { montant, date, categorie, methodePaiement, description } = req.body;
+    
+        // Créez une nouvelle instance de Depense
+        const nouvelleDepense = new depense({
+          montant,
+          date,
+          categorie,
+          methodePaiement,
+          description,
+        });
+    
+        // Enregistrez la nouvelle dépense dans la base de données
+        await nouvelleDepense.save();
+    
+        res.status(201).json({
+          status: true,
+          message: 'Dépense enregistrée avec succès',
+          depense: nouvelleDepense, // Si vous souhaitez renvoyer les données de la dépense créée
+        });
+      } catch (error) {
+        console.error(error);
+        res.status(500).json({
+          status: false,
+          message: 'Erreur lors de l\'enregistrement de la dépense',
+        });
+      }
+    }
+    
 
 } 
 export default userController;

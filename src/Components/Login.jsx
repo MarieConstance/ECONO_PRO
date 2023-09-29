@@ -6,6 +6,7 @@ import { useMutation } from "@tanstack/react-query";
 import { apiUrl } from "../../API/config/env";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
+import {AiOutlineClose} from "react-icons/ai";
 
 function Login() { 
     const navigate = useNavigate(); 
@@ -33,7 +34,10 @@ function Login() {
     })
     const onSubmit = (data)=> enregistrer(data);
   return (
-    <form className="form" onSubmit={handleSubmit(onSubmit)}>
+    <div className="contenu-formulaire">
+            <Link to="/"><h2><AiOutlineClose/></h2></Link><br/>
+           <form className="form" onSubmit={handleSubmit(onSubmit)}>
+           
         <p className="title">Connexion</p>
         <p className="message">Connectez-vous maintenant à notre application. </p>
                 
@@ -49,6 +53,8 @@ function Login() {
         <button className="submit" > Connexion </button>
         <p className="signin"> N'avez vous pas de compte ?<Link to="/Register">S'inscrire</Link> </p>
     </form>
+    </div>
+ 
   );
 }
 export default Login;

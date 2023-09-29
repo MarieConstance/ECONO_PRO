@@ -1,11 +1,11 @@
 import React from "react";
-// import SideBar from "./Sidebar";
+import SideBar from "./Sidebar";
 import "../../Style/Budget.css";
 
 function Budget() {
   return (
     <div className="espace-dashboard">
-      {/* <SideBar /> */}
+      <SideBar />
       <div className="corpsdashbord">
         <h1>Création de Budget Mensuel</h1>
         <form className="row g-3">

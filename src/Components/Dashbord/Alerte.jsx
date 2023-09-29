@@ -1,11 +1,11 @@
 import React from "react";
-// import SideBar from "./Sidebar";
+import SideBar from "./Sidebar";
 import "../../Style/Alerte.css";
 
 function Alerte() {
   return (
     <div className="espace-dashboard">
-      {/* <SideBar /> */}
+      <SideBar />
       <div className="corpsdashbord">
         <h1>Configuration des Alertes</h1>
         <form className="row g-3">

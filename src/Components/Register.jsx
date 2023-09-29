@@ -6,6 +6,7 @@ import { useForm } from "react-hook-form";
 import { useMutation } from "@tanstack/react-query";
 import axios from 'axios'
 import { useNavigate } from "react-router-dom";
+import {AiOutlineClose} from "react-icons/ai";
 
 function Register() {
     const navigate = useNavigate();
@@ -38,37 +39,41 @@ function Register() {
       })
       const onSubmit = (data)=>enregistrer(data);
         return(
-        <form className="form" onSubmit={handleSubmit(onSubmit)}>
-            <p className="title">Inscription </p>
-            <p className="message">Inscrivez-vous maintenant et obtenez un accès complet à notre application. </p>
-            <div className="flex">
-                <label>
-                    <input className="input" {...register("nom", { required: true })} type="text" placeholder="" required=""/>
-                    <span>Nom</span>
-                </label>
+            <div className="contenu-formulaire">
+                <Link to="/"><h2><AiOutlineClose/></h2></Link><br/>
+                <form className="form" onSubmit={handleSubmit(onSubmit)}>
+                    <p className="title">Inscription </p>
+                    <p className="message">Inscrivez-vous maintenant et obtenez un accès complet à notre application. </p>
+                    <div className="flex">
+                        <label>
+                            <input className="input" {...register("nom", { required: true })} type="text" placeholder="" required=""/>
+                            <span>Nom</span>
+                        </label>
 
-                <label>
-                    <input className="input" {...register("prenoms", { required: true })} type="text" placeholder="" required=""/>
-                    <span>Prénoms</span>
-                </label>
-             </div>  
-            
-            <label>
-                <input className="input" {...register("email", { required: true })} type="email" placeholder="" required=""/>
-                <span>Adresse Email</span>
-            </label> 
-                
-            <label>
-                <input className="input" {...register("password", { required: true })} type="password" placeholder="" required=""/>
-                <span>Mot De Passed</span>
-            </label>
-            <label>
-                <input className="input" {...register("confirme", { required: true, validate: (values)=> values ===  watch("password") || "mot de passe incorrect" })} type="password" placeholder="" required=""/>
-                <span>Confirmer Mot De Passe</span>
-            </label>
-            <button className="submit">  S'inscrire</button>
-            <p className="signin">Vous avez déjà un compte ? <Link to="/Login">Se connecter</Link> </p>
-        </form>
+                        <label>
+                            <input className="input" {...register("prenoms", { required: true })} type="text" placeholder="" required=""/>
+                            <span>Prénoms</span>
+                        </label>
+                    </div>  
+                    
+                    <label>
+                        <input className="input" {...register("email", { required: true })} type="email" placeholder="" required=""/>
+                        <span>Adresse Email</span>
+                    </label> 
+                        
+                    <label>
+                        <input className="input" {...register("password", { required: true })} type="password" placeholder="" required=""/>
+                        <span>Mot De Passed</span>
+                    </label>
+                    <label>
+                        <input className="input" {...register("confirme", { required: true, validate: (values)=> values ===  watch("password") || "mot de passe incorrect" })} type="password" placeholder="" required=""/>
+                        <span>Confirmer Mot De Passe</span>
+                    </label>
+                    <button className="submit">  S'inscrire</button>
+                    <p className="signin">Vous avez déjà un compte ? <Link to="/Login">Se connecter</Link> </p>
+                </form>
+            </div>
+        
     )
 }
 export default Register;

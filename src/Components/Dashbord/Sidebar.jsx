@@ -1,17 +1,17 @@
 import React from "react";
 import "../../Style/Sidebar.css";
 import "../../Style/Sidebar.css";
-import { BiSolidTachometer } from "react-icons/bi";
-import { CgProfile } from "react-icons/cg";
-import { FcStatistics } from "react-icons/fc";
+import { BiSolidTachometer, BiSolidUserCircle } from "react-icons/bi";
+import {FaMoneyBillWave} from "react-icons/fa";
+import { TbReportMoney } from "react-icons/tb";
 import {
-  AiFillCreditCard,
-  AiFillStar,
+    AiFillAlert,
   AiTwotoneSetting,
   AiOutlineSearch,
 } from "react-icons/ai";
 import { BsFillQuestionOctagonFill } from "react-icons/bs";
 import { BiLogOut } from "react-icons/bi";
+import { Link } from "react-router-dom";
 
 function SideBar() {
   return (
@@ -20,31 +20,31 @@ function SideBar() {
         <div className="lago"></div>
         <ul className="manu">
           <li className="active">
-            <a href="#">
+            <Link to="/Tableaubord">
               <BiSolidTachometer className="ice" />
               <span>Dashboard</span>
-            </a>
+            </Link>
           </li>
 
           <li>
-            <a href="#">
-              <CgProfile className="ice" />
+            <Link to="/SaisirDepense">
+              <FaMoneyBillWave className="ice" />
               <span> Dépenses</span>
-            </a>
+            </Link>
           </li>
 
           <li>
-            <a href="#">
-              <FcStatistics className="ice" />
+            <Link to="/Budget">
+              <TbReportMoney className="ice" />
               <span> Budget</span>
-            </a>
+            </Link>
           </li>
 
           <li>
-            <a href="#">
-              <AiFillCreditCard className="ice" />
+            <Link to ="/Alerte">
+              <AiFillAlert className="ice" />
               <span>Alerte</span>
-            </a>
+            </Link>
           </li>
 
           <li>
@@ -56,7 +56,7 @@ function SideBar() {
 
           <li>
             <a href="#">
-              <AiFillStar className="ice" />
+              <BiSolidUserCircle className="ice" />
               <span>Profil</span>
             </a>
           </li>
@@ -69,15 +69,15 @@ function SideBar() {
           </li>
 
           <li>
-            <a href="#" className="logout">
+            <Link to="/" className="logout">
               <BiLogOut className="ice" />
               <span>Dashboard</span>
-            </a>
+            </Link>
           </li>
         </ul>
       </div>
 
-      <div className="main--content">
+      {/* <div className="main--content">
         <div className="head--wrapper">
           <div className="head--title">
             <span>Primary</span>
@@ -91,7 +91,7 @@ function SideBar() {
             <img alt="" />
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }
